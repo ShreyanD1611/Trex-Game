@@ -79,7 +79,7 @@ function draw() {
     obstaclesGroup.velocityX = -(6 + 3*score/90);
   
     if(keyDown("space") && trex.y >= 159) {
-      trex.velocityY = -17;
+      trex.velocityY = -11;
     }
   
     trex.velocityY = trex.velocityY + 1
