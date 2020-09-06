@@ -76,6 +76,7 @@ function draw() {
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/90);
+    obstaclesGroup.velocityX = -(6 + 3*score/90);
   
     if(keyDown("space") && trex.y >= 159) {
       trex.velocityY = -12;
