@@ -70,18 +70,18 @@ function setup() {
 
 function draw() {
   //trex.debug = true;
-  background("green");
+  background("white");
   text("Score: "+ score, 500,50);
   
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
-    ground.velocityX = -(6 + 3*score/100);
+    ground.velocityX = -(6 + 3*score/90);
   
     if(keyDown("space") && trex.y >= 159) {
       trex.velocityY = -12;
     }
   
-    trex.velocityY = trex.velocityY + 0.8
+    trex.velocityY = trex.velocityY + 1
   
     if (ground.x < 0){
       ground.x = ground.width/2;
